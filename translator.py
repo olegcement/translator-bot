@@ -1,5 +1,6 @@
 import requests
-from config import api_key
+import os
+api_key = os.environ.get("api_key")
 URL = "https://api.anthropic.com/v1/messages"
 headers = {
     "x-api-key": api_key,

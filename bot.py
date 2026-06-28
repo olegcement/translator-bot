@@ -1,6 +1,8 @@
 import telebot
 import json
-from config import BOT_TOKEN, PASSWORD
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+PASSWORD = os.environ.get("PASSWORD")
 from translator import translate
 from datetime import datetime
 def log(text):
