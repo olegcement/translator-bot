@@ -1,0 +1,5 @@
+config.py
+authorized.json
+log.txt
+__pycache__/
+keys.txt
