@@ -15,4 +15,3 @@ def translate (text, language):
     respons = requests.post(URL, headers=headers, json=body)
     text_output = respons.json()["content"][0]["text"]
     return(text_output)
-print(translate("красивая пизда", "испанский"))
